@@ -19,7 +19,7 @@ jobs:
           cp -r images/* my-images/img/
           cd my-images
           git config user.name "hanzhe93"
-          git config user.email "hanzhe93@gmail.com"
+          git config user.email "hanzhe93@github.com"
           git add .
           git commit -m "Upload new images from article"
           git push origin main
@@ -31,7 +31,7 @@ jobs:
       - name: Commit replaced markdown
         run: |
           git config user.name "hanzhe93"
-          git config user.email "hanzhe93@gmail.com"
+          git config user.email "hanzhe93@github.com"
           git add .
           git commit -m "Update image links"
           git push origin main
