@@ -38,3 +38,14 @@ yes `good`
 
 ![local image](../images/test.png)
 ![new_image](../images/new.png)
+
+
+<center class ='img'>
+<img title="test" src="../images/test.png" width="45%">
+<img title="new" src="../images/new.png" width="45%">
+</center>
+
+<div align=center>
+<img src="../images/new.png" width = 300 height = 170>
+<img src="../images/test.png" width=50%> 
+</div>
