@@ -9,7 +9,7 @@ import pandas as pd
 df = pd.DataFrame({'a':[1,2,3],'b':[4,5,6]})  
 print(df)
 ```
-
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 $$
 \int_a^b x^2 = \frac{1}{3}x^3|_a^b
 
