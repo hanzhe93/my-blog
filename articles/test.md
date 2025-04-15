@@ -37,3 +37,4 @@ yes `good`
 ---
 
 ![local image](../images/test.png)
+![new_image](../images/new.png)
