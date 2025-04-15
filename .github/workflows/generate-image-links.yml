@@ -1,0 +1,45 @@
+name: Auto-generate image links
+
+on:
+  push:
+    paths:
+      - "my-blog/images/**"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-links:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate raw image links into IMAGES.md
+        run: |
+          echo "# 🖼 Image Links" > my-blog/IMAGES.md
+          echo "" >> my-blog/IMAGES.md
+
+          REPO="${{ github.repository }}"
+          BRANCH="${{ github.ref_name }}"
+
+          find my-blog/images -type f | sort | while read file; do
+            FILENAME=$(basename "$file")
+            RAW_URL="https://raw.githubusercontent.com/${REPO}/${BRANCH}/${file}"
+            echo "- **${FILENAME}**: [${RAW_URL}](${RAW_URL})" >> my-blog/IMAGES.md
+          done
+
+      - name: Commit IMAGES.md if updated
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if [[ -n "$(git status --porcelain my-blog/IMAGES.md)" ]]; then
+            git add my-blog/IMAGES.md
+            git commit -m "auto: update image links in IMAGES.md [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
