@@ -1,0 +1,38 @@
+name: Upload Images to GitHub Image Repo
+
+on:
+  push:
+    paths:
+      - 'images/**'
+      - '**.md'
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current repo
+        uses: actions/checkout@v3
+
+      - name: Upload images to image repo
+        run: |
+          git clone https://x-access-token:${{ secrets.IMG_TOKEN }}@github.com/hanzhe93/my-images.git
+          cp -r images/* my-images/img/
+          cd my-images
+          git config user.name "hanzhe93"
+          git config user.email "hanzhe93@gmail.com"
+          git add .
+          git commit -m "Upload new images from article"
+          git push origin main
+
+      - name: Replace image links in markdown
+        run: |
+          python replace_links.py
+          
+      - name: Commit replaced markdown
+        run: |
+          git config user.name "hanzhe93"
+          git config user.email "hanzhe93@gmail.com"
+          git add .
+          git commit -m "Update image links"
+          git push origin main
+
