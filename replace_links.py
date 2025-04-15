@@ -1,7 +1,7 @@
 import os
 import re
 
-IMAGE_REPO = 'https://raw.githubusercontent.com/hanzhe93/my-images/main/img/'
+IMAGE_REPO = 'https://raw.githubusercontent.com/hanzhe93/my-images/main'
 
 for mdfile in os.listdir('articles'):
     if not mdfile.endswith('.md'):
