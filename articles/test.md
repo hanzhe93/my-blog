@@ -41,11 +41,11 @@ yes `good`
 
 
 <center class ='img'>
-<img title="test" src="../images/test.png" width="45%">
-<img title="new" src="../images/new.png" width="45%">
+<img title="test" src="../images/test.png" width="25%">
+<img title="new" src="../images/new.png" width="25%">
 </center>
 
 <div align=center>
 <img src="../images/new.png" width = 300 height = 170>
-<img src="../images/test.png" width=50%> 
+<img src="../images/test.png" width=30%> 
 </div>
