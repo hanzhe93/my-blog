@@ -39,13 +39,14 @@ yes `good`
 ![local image](../images/test.png)
 ![new_image](../images/new.png)
 
-
+---
 
 <div align=center>
 <img src="../images/new.png" width = 300 height = 170>
 <img src="../images/test.png" width=30%> 
 </div>
 
+---
 
 <div align=center>
 <img src="../images/new.png" width = 150 height = 80>
