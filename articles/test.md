@@ -34,5 +34,5 @@ yes `good`
 
 ---
 
-![local image](/home/zhe/Code/markdown/my-blog/images/test.png)
+![local image](../images/test.png)
 
