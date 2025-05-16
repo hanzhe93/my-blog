@@ -63,7 +63,7 @@ yes `good`
 ### 1. Variation
 
 $$
-{\Pi_{HR}(\mathbf{J}, \phi; \mathcal{D}) = 
+\Pi_{HR}(\mathbf{J}, \phi; \mathcal{D}) = 
 \int_{\Omega} \left( 
 \frac{1}{2} \mathbf{J}^\mathrm{T} \mathbf{D}^{-1} \mathbf{J} 
 + \mathbf{J} \cdot \nabla \phi 
@@ -71,7 +71,7 @@ $$
 \right) d\Omega 
 - \int_{\Gamma_D} \lambda_\phi (\phi - \bar{\phi}) \, d\Gamma 
 - \int_{\Gamma_N} \bar{J}_n \phi \, d\Gamma 
-\tag{1}}
+\tag{1}
 $$
 
 Ignore the boundary conditions, by performing the variation with respect to $\mathbf{J}$ we get:
