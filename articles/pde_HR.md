@@ -63,6 +63,10 @@ yes `good`
 ### 1. Variation
 
 $$
+\int_a^b x^2 = \frac{1}{3}x^3|_a^b
+$$
+
+$$
 \Pi_{HR}(\mathbf{J}, \phi; \mathcal{D}) = 
 \int_{\Omega} \left( 
 \frac{1}{2} \mathbf{J}^\mathrm{T} \mathbf{D}^{-1} \mathbf{J} 
