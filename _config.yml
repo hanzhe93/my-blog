@@ -1,4 +1,5 @@
 title: My Math Site
+description: A simple GitHub Pages site with MathJax
 markdown: kramdown
 theme: minima
 
