@@ -56,11 +56,6 @@ yes `good`
 </div>
 -->
 
----
-layout: default
-title: 数学公式示例
----
-
 
 # Variational Principle 
 
